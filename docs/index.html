@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Denis Ryzhkov</title>
+    <!-- Copyright (C) 2013+ Denis Ryzhkov denisr@denisr.com All rights reserved -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#639" />
+    <meta name="description" content="Software engineering services with love and thought. Solving complex challenges. Python, TypeScript, DB, AWS, etc." />
+
+    <meta property="og:title" content="Denis Ryzhkov" />
+    <meta property="og:description" content="Software engineering services with love and thought. Solving complex challenges. Python, TypeScript, DB, AWS, etc." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://denisr.com/denisr-2021-04-20-1000.jpg" />
+    <meta property="og:url" content="https://denisr.com/" />
+
+    <link rel="icon" href="denisr-tri.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="denisr-2021-04-20-1000.jpg" sizes="1000x1000" type="image/jpeg" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300" />
+    <!-- Ubuntu Font License - https://www.ubuntu.com/legal/font-licence -->
+
+    <style>
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  margin: 0;
+  outline: 0;
+  border: 0;
+  padding: 0;
+
+  font-family: Ubuntu, sans-serif;
+  font-size: 110%;
+
+  background-image: url('denisr-4d.png');
+  background-color: #FFF;
+  color: #333;
+  -webkit-tap-highlight-color: rgba(0,0,0, 0.0);
+
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+}
+
+body {
+  margin: 1em 0.5em;
+}
+
+.content {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+ul.team-says {
+  margin-top: 0.5em;
+}
+
+.team-says li {
+  text-align: justify;
+}
+
+li.team-says li {
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #639;
+}
+
+img {
+  max-width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #DDD;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 130%;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.avatar {
+  flex: 1 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-image: url('denisr-2021-04-20-1000.jpg');
+}
+
+.menu .title {
+  font-weight: bolder;
+}
+
+.clients > ul,
+.about > ul {
+  margin-top: 0.3em;
+}
+
+.section {
+  padding-top: 1em;
+}
+
+.hidden,
+.section:not(:target) {
+  display: none;
+}
+
+.cv {
+  text-align: center;
+}
+
+.cv img {
+  margin-top: 0.5em;
+}
+
+.ideas {
+  background-color: #000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('boxxx.jpg');
+  height: 20em;
+}
+
+#principles {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url('keep-calm-simple-opacity4.png');
+}
+
+#contacts ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 40px;
+}
+
+#mirantis > .header {background-image: url('mirantis.png')}
+#cmr > .header {background-image: url('cmr.png')}
+#finetune > .header {background-image: url('finetune.png')}
+#more > .header {background-image: url('old.png')}
+#open-source > .header {background-image: url('github.png')}
+#offer > .header {background-image: url('checklist.png')}
+#principles > .header {background-image: url('principles.png')}
+#wakie > .header {background-image: url('wakie.png')}
+
+.about > .header {background-image: url('eye.png')}
+.arc > .header {background-image: url('arc.png')}
+.clients > .header {background-image: url('client.png')}
+.email > .header {background-image: url('email.png')}
+.github > .header {background-image: url('github.png')}
+.indeed > .header {background-image: url('indeed.png')}
+.indiehackers > .header {background-image: url('indiehackers.png')}
+.linkedin > .header {background-image: url('linkedin.png')}
+.nfj > .header {background-image: url('nfj.png')}
+.old > .header {background-image: url('old.png')}
+.personalities16 > .header {background-image: url('16personalities.png')}
+.pypi > .header {background-image: url('pypi.png')}
+.remoteok > .header {background-image: url('remoteok.png')}
+.stackoverflow > .header {background-image: url('stackoverflow.png')}
+.whyolet > .header {background-image: url('whyolet.png')}
+
+.section > .header > .title {
+  font-weight: bolder;
+}
+
+.icon {
+  margin-left: 0.5em;
+  width: 32px;
+  height: 32px;
+}
+
+.telegram {background-image: url('telegram.png')}
+.viber {background-image: url('viber.png')}
+.whatsapp {background-image: url('whatsapp.png')}
+
+.aspect,
+.role {
+  font-weight: bold;
+}
+
+.recommender {
+  text-align: right;
+}
+
+.more-content {
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media all and (min-width: 40em) {
+  .more-content {
+    flex-direction: row;
+  }
+}
+
+.nav {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav > div {
+  opacity: 0.5;
+}
+
+.nav > div:hover {
+  opacity: 1;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="menu">
+        <div class="person">
+          <div class="name"><a href="#hi">Denis Ryzhkov</a></div>
+          <div class="avatar">&nbsp;</div>
+        </div>
+
+        <div class="clients">
+          <div class="header"><div class="title">Clients:</div></div>
+          <ul>
+            <li><a href="#mirantis">Mirantis</a></li>
+            <li><a href="#cmr">CMR Surgical</a></li>
+            <li><a href="#finetune">Finetune</a></li>
+            <li><a href="#wakie">Wakie</a></li>
+            <li><a href="#more">TestFlight and 8 more</a></li>
+          </ul>
+        </div>
+
+        <div class="about">
+          <div class="header"><div class="title">About:</div></div>
+          <ul>
+            <li><a href="#open-source">Open source</a></li>
+            <li><a href="#principles">Principles</a></li>
+            <li><a href="#offer">Offer</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section" id="ideas">
+        <a href="#hi"><div class="ideas">&nbsp;</div></a>
+      </div>
+
+      <div class="section" id="hi">
+        <div class="more-content">
+          <div>
+            <b>Software engineering services with love and thought:</b>
+            <ul>
+              <li>Solving complex challenges</li>
+              <li>Keeping it simple and valuable</li>
+              <li>Investigating tricky cases<br /><small>with attention to detail and feedback</small></li>
+              <li><a href="#ideas">Proposing ideas</a> and technologies proactively</li>
+              <li>Documenting in a simple but comprehensive way</li>
+              <li>Building software from scratch and maintaining it</li>
+              <li>Tuning performance and reliability</li>
+              <li>Reviewing the code with hands-on suggestions</li>
+              <li>Answering questions and learning all the time</li>
+            </ul>
+          </div>
+
+          <div class="cv">
+            <a href="Denis-Ryzhkov-CV-2024-11.pdf">
+              <b>CV</b> 2024-11:<br />
+              <img src="pdf.png" style="width: 6em" alt="PDF" />
+            </a>
+          </div>
+        </div>
+
+        <b>Skills:</b>
+        <ul>
+          <li>
+            <a href="https://xkcd.com/353/"><b>Python</b></a> - 14 years:<br />
+            <small>
+              AsyncIO, AsyncMock, BeautifulSoup, Celery, Chalice, CherryPY, Django, FastAPI,
+              GC (<a href="https://github.com/denis-ryzhkov/mem_top">mem_top</a>),
+              Gevent (<a href="https://github.com/denis-ryzhkov/gbn">gbn</a>), Gipc,
+              Graphene (<a href="https://github.com/academicmerit/aiographql">aiographql</a>),
+              GraphQL, GreenletProfiler, Gunicorn, Multiprocessing, MyPy, PoeThePoet, Poetry,
+              PyQt, PyTest, Requests,
+              Select (<a href="https://github.com/denis-ryzhkov/cheatsheets/tree/main/python/realtime-capture">realtime-capture</a>),
+              Socket (<a href="https://github.com/denis-ryzhkov/mqks/blob/master/dmks.py">dmks</a>),
+              SQLAlchemy, Traceback (<a href="https://github.com/denis-ryzhkov/critbot">critbot</a>),
+              TweePy, Typing, Uvicorn, Websocket.
+            </small>
+          </li>
+          <li>
+            <b>TypeScript</b> - 3 years:<br />
+            <small>AWS-SDK, CDK, ES2022 JavaScript, Node.js, Prisma, TypeGraphQL.</small>
+          </li>
+          <li>
+            <b>SQL</b> and NoSQL - 23 years:<br />
+            <small>
+              DynamoDB, Hasura (<a href="https://pypi.org/project/ahasura/">ahasura</a>,
+              <a href="https://github.com/hasura/graphql-engine/issues/8599">bug report</a>,
+              <a href="https://github.com/hasura/graphql-engine/issues/5001#issuecomment-1146088710">workaround</a>,
+              <a href="https://github.com/hasura/graphql-engine/issues/6769#issuecomment-1031544798">doc fix</a>),
+              Memcached (pylibmc, pymemcache, twemproxy), Metabase, MongoDB (pymongo), MS SQL,
+              MySQL (my4geks, mysql-python, pymysql, umysql),
+              PostgreSQL (<a href="https://github.com/denis-ryzhkov/cheatsheets/blob/main/postgresql/README.md#data-migration-from-single-json-to-multiple-tables">data-modifying CTEs</a>,
+              pg4geks, pl/pgsql, psycopg2, RLS), Redis (gearman, pythongearman, redis-py), SQLite.
+            </small>
+          </li>
+          <li>
+            <b>AWS</b> - 13 years:<br />
+            <small>
+              API Gateway, AWS CLI, AWS-SDK (TypeScript), Boto (Python SDK), CDK (TypeScript), Certificate Manager,
+              Chalice (<a href="https://github.com/aws/chalice/issues/1598#issuecomment-916066423">chalice-lambda-image</a>),
+              CloudFormation, CloudFront, CloudWatch, Cognito, cross-account S3-SQS-Lambda,
+              DynamoDB, EC2, ECS/Fargate, ELB, IAM, Lambda, RDS, Route53, S3, Sagemaker,
+              SNS, SQS, SSM, SSM bastion tunnel, VPC.
+            </small>
+          </li>
+          <li>
+            <b>DevOps</b>:<br />
+            <small>
+              Auth0, Bash (<a href="https://github.com/denis-ryzhkov/cheatsheets/tree/main/bash/echorun">echorun,
+              <a href="https://github.com/denis-ryzhkov/cheatsheets/tree/main/bash/try">try</a>,
+              <a href="https://github.com/academicmerit/binfra">binfra</a>,
+              <a href="https://stackoverflow.com/questions/60424390/is-there-a-way-to-kill-uvicorn-cleanly/71036303#71036303">answer</a>),
+              Docker, GitHub Actions, GitLab CI, Jq, Harness.io, IPTables,
+              Kotlin TeamCity DSL, Kubernetes, Linux, Locust, Nginx, Sentry,
+              Serverless Framework (<a href="https://github.com/serverless/serverless/discussions/10805#discussioncomment-2601085">comment,
+              <a href="https://github.com/Hybridless/serverless-ecs-plugin/issues/2">#2</a>,
+              <a href="https://github.com/Hybridless/serverless-ecs-plugin/issues/3">#3</a>,
+              <a href="https://github.com/Hybridless/serverless-ecs-plugin/pull/4">#4</a>),
+              ShellCheck, Terraform, Ubuntu.
+            </small>
+          </li>
+          <li>
+            <b>Etc</b>:<br />
+            <small>
+              Chrome Extensions, CSS, <b>Dart</b> (<a href="https://github.com/whyolet/safe_int_id">safe_int_id</a>),
+              Elasticsearch, <b>Flutter</b> (dargon2_flutter, dart, hive, isar, soundpool, sqflite_sqlcipher,
+              <a href="https://github.com/simolus3/sqlite3.dart/pull/189/files">sqlite3</a>),
+              Git, <b>Golang</b>, Grafana, Graphviz, HTML, Jira Apps, Mermaid, MoinMoin, NLTK,
+              RabbitMQ (amqpy, carrot, <a href="https://github.com/denis-ryzhkov/mqks">mqks</a>,
+              nucleon.amqp, puka), sequencediagram.org, SMPP, SphinxSearch,
+              Sumo Logic (alerts, dashboards, lookups, monitors, search query language),
+              VoIP (agi, ami, ari, asterisk, dialplan, fastagi, pyst2, pystrix).
+            </small>
+          </li>
+          <li>
+            <b>English</b> - 31 years:<br />
+            <a href="Denis-Ryzhkov-English-Speaking-2023-01.pdf">8.2/10, B2-C1, advanced</a>
+          </li>
+        </ul>
+
+        Please explore this website to find more.
+        <div class="nav">
+          <div>&nbsp;</div>
+          <div><a href="#mirantis">Mirantis ▶</a></div>
+        </div>
+      </div>
+
+      <div class="section" id="mirantis">
+        <div class="header"><div class="title"><a href="https://www.mirantis.com/">Mirantis</a></div></div>
+        Jan 2023 - now
+        <ul>
+          <li>
+            <span class="aspect">Project:</span>
+            Moving IaC and CI/CD of a big customer to a new level
+          </li>
+          <li>
+            <span class="aspect">Role:</span>
+            Senior Software Engineer
+          </li>
+          <li>
+            <span class="aspect">Improved skills:</span>
+            <ul>
+              <li>aws</li>
+              <li>bash -
+                <a href="https://github.com/denis-ryzhkov/cheatsheets/tree/main/bash/echorun">echorun</a>,
+                <a href="https://github.com/denis-ryzhkov/cheatsheets/tree/main/bash/try">try</a>
+              </li>
+              <li>cdk</li>
+              <li>ci/cd</li>
+              <li>devx</li>
+              <li>docker</li>
+              <li>gitlab ci</li>
+              <li>golang</li>
+              <li>harness.io</li>
+              <li>jq</li>
+              <li>mermaid</li>
+              <li>kubernetes</li>
+              <li>python -
+                <a href="https://github.com/denis-ryzhkov/cheatsheets/tree/main/python/realtime-capture">realtime-capture</a>
+              </li>
+              <li>sequencediagram.org</li>
+              <li>terraform</li>
+              <li>typescript</li>
+            </ul>
+          </li>
+          <li class="team-says">
+            <div class="aspect">Team says:</div>
+            <ul>
+              <li>
+                «I had the pleasure of working closely with Denis,
+                and I can confidently attest to his exceptional problem-solving skills.
+                Denis is not just a good developer; he is outstanding in his field.
+                His ability to tackle complex technical challenges is truly remarkable
+                and has greatly contributed to the success of our projects.
+                Denis consistently demonstrates a strong work ethic
+                and an unwavering commitment to delivering high-quality results.
+                His attention to detail is impeccable, ensuring that every aspect of his work
+                is well-thought-out and meticulously executed.
+                He is a valuable asset to any team, as his technical expertise and dedication
+                shine through in every project he takes on.»
+                <div class="recommender"><a href="https://www.linkedin.com/in/patryk-wasielewski/">Patryk Wasielewski</a>, DevOps Consultant at AWS Professional Services</div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav">
+          <div><a href="#hi">◀ Hi</a></div>
+          <div><a href="#cmr">CMR Surgical ▶</a></div>
+        </div>
+      </div>
+
+      <div class="section" id="cmr">
+        <div class="header"><div class="title"><a href="https://cmrsurgical.com/">CMR Surgical</a></div></div>
+        Oct 2021 - Dec 2022
+        <ul>
+          <li>
+            <span class="aspect">Project:</span>
+            Apps for robots saving more people with better outcome in less time
+          </li>
+          <li>
+            <span class="aspect">Role:</span>
+            R&D backend engineer
+          </li>
+          <li>
+            <div class="aspect">Responsibilities:</div>
+            <ul>
+              <li>will-do hands-on problem solving</li>
+              <li>addressing feedback and goals</li>
+              <li>proposing ideas and technologies</li>
+              <li>documenting to reduce iterations</li>
+              <li>implementing and reviewing the code</li>
+              <li>reliability and performance tuning</li>
+              <li>investigating the most tricky cases</li>
+              <li>answering questions and learning</li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="aspect">Improved skills - and opensource created:</div>
+            <ul>
+              <li>
+                <u>python</u>:
+                fastapi, typing, mypy, uvicorn, poetry, poethepoet, asyncio, AsyncMock -
+                <b><a href="https://pypi.org/project/ahasura/">ahasura</a></b>
+              </li>
+              <li><u>js/typescript</u>: es2022, typegraphql, prisma, cdk, aws-sdk</li>
+              <li>
+                <u>db</u>: postgresql, rls, pl/pgsql,
+                <a href="https://github.com/denis-ryzhkov/cheatsheets/blob/main/postgresql/README.md#data-migration-from-single-json-to-multiple-tables">data-modifying CTEs</a>,
+                hasura -
+                <a href="https://github.com/hasura/graphql-engine/issues/8599">bug report</a>,
+                <a href="https://github.com/hasura/graphql-engine/issues/5001#issuecomment-1146088710">workaround</a>,
+                <a href="https://github.com/hasura/graphql-engine/issues/6769#issuecomment-1031544798">doc fix</a>,
+                <a href="https://github.com/hasura/graphql-engine/issues/8520">more</a>
+              </li>
+              <li>
+                <u>bash:</u> scripts -
+                <a href="https://stackoverflow.com/questions/60424390/is-there-a-way-to-kill-uvicorn-cleanly/71036303#71036303">answer</a>
+              </li>
+              <li><u>docker</u>: secrets, size and performance optimizations</li>
+              <li>
+                <u>serverless.com</u>: lambda-image, serverless-ecs-plugin - issues
+                <a href="https://github.com/Hybridless/serverless-ecs-plugin/issues/2">#2</a>,
+                <a href="https://github.com/Hybridless/serverless-ecs-plugin/issues/3">#3</a>,
+                <a href="https://github.com/Hybridless/serverless-ecs-plugin/pull/4">#4</a>
+              </li>
+              <li>
+               <u>aws</u>: cdk, ssm bastion tunnel, cognito, cross-account s3-sqs-lambda, sns, cloudformation -
+               <a href="https://github.com/serverless/serverless/discussions/10805#discussioncomment-2601085">comment</a>
+              </li>
+              <li><u>devops</u>: terraform, kotlin teamcity dsl, gitlab ci/cd</li>
+              <li><u>sumo logic</u>: search query language, lookups, dashboards, monitors, alerts</li>
+            </ul>
+          </li>
+
+          <li class="team-says">
+            <div class="aspect">Team says:</div>
+            <ul>
+              <li>
+                «Denis is an excellent developer, combining a deep level of technical knowledge,
+                with a thorough and methodical approach to everything you ask him to do.
+                When Denis first joined our team, he made some technical suggestions
+                that allowed us to accelerate our deliveries on a challenging project.
+                I am very happy that we listened his recommendations
+                any updated our architecture and frameworks accordingly.
+                I wouldn't hesitate to recommend Denis, or hire him again in the future.»
+                <div class="recommender"><a href="https://www.linkedin.com/in/craig-watkinson/">Craig Watkinson</a>, Senior Software Engineer at CMR Surgical</div>
+              </li>
+              <li>
+                «Denis is a great developer who has gone above and beyond
+                to ensure that he has a grasp on not just the work he is tasked with
+                but the wider picture as well.
+                Denis has driven forward improvements at CMR making great suggestions
+                which will have a real benefit when developing services for our customers.»<br />
+                «Thank you for your work on this service -
+                I think your approach to the design is letting us iterate on this very quickly
+                without costing us much time. There have been quite a few changes requested
+                and that's not a bad thing it is the process
+                working to make sure we produce the right result.
+                I think you've been very patient!»
+                <div class="recommender"><a href="https://www.linkedin.com/in/1jamescooke/">James Cooke</a>, Staff Software Engineer at CMR Surgical</div>
+              </li>
+              <li>
+               «Very well written documentation for this epic Denis,
+               easy to read and understand, easy to follow whats been done,
+               whats next and gives the ticket real context.
+               Have read through the code and all looks good from my understanding»
+               <div class="recommender"><a href="https://www.linkedin.com/in/jake-leigh-265685147/">Jake Leigh</a>, Software Engineer at CMR Surgical</div>
+              </li>
+              <li>
+               «Denis brings a wealth of knowledge and can make reasoned recommendations
+               about best practices for designing API and data storage solutions.
+               He is a pleasure to work with, can take feedback and communicates well.
+               He is a natural learner, always curious about the optimal way to structure the code,
+               but able to take pragmatic compromises to ensure delivery.
+               Given an opportunity, we wouldn't hesitate to hire him again.»
+               <div class="recommender"><a href="https://www.linkedin.com/in/jan-jedrzej-chwiejczak-1a371644">Jan Jedrzej Chwiejczak</a>, Product Manager and Engineering Lead at CMR Surgical</div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav">
+          <div><a href="#mirantis">◀ Mirantis</a></div>
+          <div><a href="#finetune">Finetune ▶</a></div>
+        </div>
+      </div>
+
+      <div class="section" id="finetune">
+        <div class="header"><div class="title"><a href="https://www.finetunelearning.com/">Finetune</a></div></div>
+        Nov 2017 - Sep 2021
+        <ul>
+          <li>
+            <span class="aspect">Project:</span>
+            Moving education from paper to screen to AI era
+          </li>
+          <li>
+            <span class="aspect">Role:</span>
+            Backend architect & innovation engineer
+          </li>
+          <li>
+            <div class="aspect">Responsibilities:</div>
+            <ul>
+              <li>R&D, new products</li>
+              <li>proposing new ideas, requirements, flows, models</li>
+              <li>documenting, implementing most complex parts</li>
+              <li>reviewing PRs a lot, proposing fixes and improvements</li>
+              <li>answering questions, teaching and learning</li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="aspect">Improved skills - and opensource created:</div>
+            <ul>
+              <li><u>python</u>: black, django, asyncio, graphql, graphene - <a href="https://github.com/academicmerit/aiographql">aiographql</a></li>
+              <li><u>serverless</u>: aws sam, fargate, chalice - <a href="https://github.com/aws/chalice/issues/1598#issuecomment-916066423">chalice-lambda-image</a></li>
+              <li><u>aws</u>: iam, ssm, s3, rds, vpc, elbv2, apigateway, ecs, route53, sagemaker</li>
+              <li><u>bash</u>: shellcheck, aws cli - <a href="https://github.com/academicmerit/binfra">binfra</a></li>
+              <li><u>deploy</u>: docker, kubernetes, kops, terraform</li>
+              <li><u>db</u>: postgresql+jsonb, metabase, hasura</li>
+              <li><u>ai/ml</u>: ecree, openai, sagemaker, tensorflow</li>
+              <li><u>integration</u>: auth0, jira apps, chrome extensions, ims qti, ims lti sso</li>
+              <li><u>tdd</u>: factory_boy, pytest</li>
+              <li><u>ci/cd:</u> semaphoreci, circleci, github actions</li>
+              <li><u>dev tools:</u> sentry, locust, swagger, quip, jira, slack, zoom, github, kitty+micro - <a href="https://github.com/denis-ryzhkov/config">config</a></li>
+            </ul>
+          </li>
+
+          <li class="team-says">
+            <div class="aspect">Team says:</div>
+            <ul>
+              <li>
+                «Denis Ryzhkov #Kudos I couldn't imagine working without you!<br />
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6514486478385541120/">#MakingWorkFun</a> and bringing great engineering quality and documentation»
+                <div class="recommender"><a href="https://www.linkedin.com/in/kwanhlee/">Kwan Hong Lee</a>, CTO at Finetune</div>
+              </li>
+              <li>
+                «Denis is a great person to work with, really a problem solver specialist, he is a great mentor and I am glad to have the chance to work with him.
+                He always provides great feedback and helps everyone as much as he can. I called him "The Professor" because of how much I learned from him.»
+                <div class="recommender"><a href="https://www.linkedin.com/in/tyagow/">Tiago Almeida</a>, Team Lead at Finetune</div>
+              </li>
+              <li>
+                «This is brilliant - thank you for your help.
+                There is a lot of interesting information in here.»
+                <div class="recommender">Finetune customer, satisfied by <a href="https://www.metabase.com/">Metabase</a> we provided</div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav">
+          <div><a href="#cmr">◀ CMR Surgical</a></div>
+          <div><a href="#wakie">Wakie ▶</a></div>
+        </div>
+      </div>
+
+      <div class="section" id="wakie">
+        <div class="header"><div class="title"><a href="https://wakie.com/">Wakie</a></div></div>
+        Feb 2014 - Oct 2017
+        <ul>
+          <li>
+            <span class="aspect">Project:</span>
+            Connecting you with the right person for any question or emotion
+          </li>
+          <li>
+            <span class="aspect">Role:</span>
+            Python Senior Software Engineer and Architect
+          </li>
+          <li>
+            <div class="aspect">Created main frameworks, libs - and opensource:</div>
+            <ul>
+              <li>message queue - <a href="https://github.com/denis-ryzhkov/mqks">mqks</a></li>
+              <li>direct sockets - <a href="https://github.com/denis-ryzhkov/mqks/blob/master/dmks.py">dmks</a></li>
+              <li>background events</li>
+              <li>controllable daemons</li>
+              <li>websocket api prototype</li>
+              <li>telecom adapter via <a href="https://wiki.asterisk.org/wiki/pages/viewpage.action?pageId=4817239">ami</a></li>
+              <li>metrics etl with web ui</li>
+              <li>greenlet profiler - <a href="https://github.com/denis-ryzhkov/gbn">gbn</a></li>
+              <li>memory leak inspector - <a href="https://github.com/denis-ryzhkov/mem_top">mem_top</a></li>
+              <li>notification on error - <a href="https://github.com/denis-ryzhkov/critbot">critbot</a></li>
+              <li>db adapters, <a href="https://github.com/denis-ryzhkov?tab=repositories">etc</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="aspect">Proposed and done over 500 tasks:</div>
+            <ul>
+              <li>development of frameworks</li>
+              <li>scalability and failover</li>
+              <li>performance optimization</li>
+              <li>deep investigations</li>
+              <li>documenting flows</li>
+              <li>helping teammates</li>
+              <li>coding daemons</li>
+              <li>code review</li>
+              <li>devops</li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="aspect">Improved my skills in:</div>
+            <ul>
+              <li><u>python</u>, its stdlib: multiprocessing, socket, etc</li>
+              <li><u>greenlet</u>, gevent, gevent-websocket, gipc, greenletprofiler, gbn</li>
+              <li><u>memcached</u>, twemproxy, pylibmc, pymemcache</li>
+              <li><u>redis</u>, redis-py, gearman, python-gearman, zeromq, zookeeper</li>
+              <li><u>rabbitmq</u>, puka, amqpy, nucleon.amqp, mqks</li>
+              <li><u>mysql</u>, mysql-python, umysql, pymysql, my4geks</li>
+              <li><u>postgresql</u>, psycopg2, pg4geks</li>
+              <li><u>mongodb</u> cluster, pymongo</li>
+              <li><u>voip</u>, asterisk, dialplan, pyst2, pystrix, agi, fastagi, ami, ari, smpp</li>
+              <li><u>aws</u>, ec2, s3, route53, rds, awscli, boto, boto3</li>
+              <li><u>linux</u>, ubuntu, bash, sysctl, iptables, nginx, mercurial, git, supervisor</li>
+              <li><u>etc</u>: babel, graphviz, nltk, nodejs, nose, objgraph, requests</li>
+            </ul>
+          </li>
+
+          <li class="team-says">
+            <div class="aspect">Team says:</div>
+            <ul>
+              <li>
+                «Denis is one of the best developers I have ever met.
+                He is open-minded, creative, smart and organized.
+                It is amazing that all this can be combined in one person.
+                Denis is good at solving complex challenges and he would always succeed if you give him enough time.
+                He is a brilliant engineer, team member and a friend.»
+                <div class="recommender"><a href="https://www.linkedin.com/in/hrachik/">Hrachik Adjamian</a>, <span class="role">Founder and CEO</span> at Wakie</div>
+              </li>
+              <li>
+                «Denis is one of the best developers I worked with.
+                Very structural and responsible approach to tasks.
+                Quick delving into mechanics of unfamiliar, already implemented systems.
+                Superb understanding of computer systems and modern ways of software engineering, both in architecture and tools.
+                That's why he can design architecture of complex systems with horizontal scaling and implement it himself,
+                using various tools (programming languages, databases, queues, caches, etc) depending on technical and business requirements.
+                Rescued us in critical situations like downtime at night.
+                Great work in team, always ready to help, teach and learn.
+                Denis, don't leave us. We'll be missing you :)»
+                <div class="recommender"><a href="https://www.linkedin.com/in/parfyonov-dmitry-1897524a/">Dmitry Parfyonov</a>, <span class="role">CTO</span> at Wakie</div>
+              </li>
+              <li>
+                «Denis - one of the most polite and attentive people of all with whom I was assigned to work and be friends.
+                To be honest - he is the most polite and attentive.
+                The vastness of his knowledge in the field of programming and python in particular makes any interlocutor feel like a schoolboy.
+                At the same time Denis is always open to the new and at any opportunity absorbs new knowledge / technology.
+                The reliability of the products that Denis writes exceeds the reliability of the Kalashnikov assault rifle about 7 times.
+                I strongly recommend this guy to hire for a company of any level - from a small start-up, to a trans-galactic corporation - I'm sure he will benefit everywhere.»
+                <div class="recommender"><a href="https://www.linkedin.com/in/alexander-dolgushin-04bb3a77/">Alexander Dolgushin</a>, <span class="role">Senior VoIP Engineer</span> at Wakie</div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav">
+          <div><a href="#finetune">◀ Finetune</a></div>
+          <div><a href="#more">TestFlight and 8 more ▶</a></div>
+        </div>
+      </div>
+
+      <div class="section" id="more">
+        <div class="header"><div class="title"><a href="https://developer.apple.com/testflight/">TestFlight</a> and 8 more</div></div>
+        2001-2014
+        <div class="more-content">
+          <div>
+            <div class="aspect">In chronological order:</div>
+            <ul>
+              <li>2001-2001 <a href="https://www.linkedin.com/in/denisryzhkov/details/experience/">Jukola-Info</a> - Junior Web Engineer</li>
+              <li>2001-2010 <a href="https://www.linkedin.com/in/denisryzhkov/details/experience/">Teplosphera</a> - Junior to Lead Software Engineer</li>
+              <li>2009-2010 <a href="https://brandlane.dk/">Brand Lane</a> - Web Engineer</li>
+              <li>2010-2011 <a href="https://www.linkedin.com/in/denisryzhkov/details/experience/">VicMan</a> - Junior to Senior Python Engineer</li>
+              <li>
+                2011-2014
+                <a href="https://www.tula.co/">TulaCo</a> - Senior to Lead Python Engineer
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/denisryzhkov/details/projects/">Burstly/RAS</a></li>
+                  <li><a href="https://developer.apple.com/testflight/">TestFlight</a></li>
+                  <li><a href="https://www.linkedin.com/in/denisryzhkov/details/projects/">Lootsie</a></li>
+                  <li><a href="https://www.linkedin.com/in/denisryzhkov/details/projects/">ICM SEO</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li>Details: <a href="https://www.linkedin.com/in/denisryzhkov/details/experience/">LinkedIn - Experience</a></li>
+              <li>What these clients said: <a href="https://denisr.com/v1/#clients-say">v1/#clients-say</a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/denisryzhkov/details/education/">Education</a> 1999-2004:<br />
+                Belarusian State University,<br />
+                Specialist, <a href="https://academia.stackexchange.com/a/78098">equiv. of Master</a>,<br />
+                System Software Engineer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav">
+          <div><a href="#wakie">◀ Wakie</a></div>
+          <div><a href="#open-source">Open source ▶</a></div>
+        </div>
+      </div>
+
+      <div class="section" id="open-source">
+        <div class="header"><div class="title">Open source:</div></div>
+        <ul>
+          <li>Why software engineers love open source?</li>
+          <li>We take so much from our community for free, that we should provide something in return.</li>
+          <li>It is also a nice way to showcase the code we created without breaking NDA and work ethic.</li>
+          <li>
+            <a href="https://github.com/denis-ryzhkov?tab=repositories&q=&type=&language=&sort=stargazers">github.com/denis-ryzhkov</a> - 38 public repos, top one has 69 stars.
+            <ul class="team-says">
+              <li>
+                «I was searching for 2 hours for why my application was leaking memory,
+                I tried every tool under the sun (scalene, memory-profiler, pyrasite, pympler, guppy3)
+                until your tool finally pointed me towards stupid flask_sqlalchemy _DebugQueryTuple
+                increasing in ref counter. Huge thanks! I thought I was going crazy,
+                now I can run my tasks without fearing they're gonna get OOM killed :)»
+                <div class="recommender"><a href="https://doda.co/">Dominik Dario</a>, <span class="role"><a href="https://github.com/denis-ryzhkov/mem_top">mem_top</a> user</span></div>
+              </li>
+            </ul>
+          </li>
+          <li><a href="https://github.com/whyolet">github.com/whyolet</a> - open-source products like <a href="https://jonf.app/">JONF</a>.</li>
+          <li><a href="https://github.com/simolus3/sqlite3.dart/pull/189/files">github:sqlite3.dart/pull/189</a> - example of my PR merged into a <a href="https://pub.dev/packages/sqlite3">popular package</a>.</li>
+          <li><a href="https://stackoverflow.com/users/350937/denis-ryzhkov">stackoverflow.com:denis-ryzhkov</a> - top 8% of reputation, 19 answers, top one has 101 votes.</li>
+          <li><a href="https://pypi.org/user/denisr/">pypi.org/user/denisr</a> - 19 python packages, one is critical - top 1% of downloads over the prior 6 months:</li>
+        </ul>
+        <img src="pypi-crit.png" alt="19 python packages, one is critical" />
+        <div class="nav">
+          <div>&nbsp;</div>
+          <div><a href="#principles">Principles ▶</a></div>
+        </div>
+      </div>
+
+      <div class="section" id="principles">
+        <div class="header"><div class="title">Principles:</div></div>
+        <ul>
+          <li>Value for the user</li>
+          <li><a href="https://en.wikipedia.org/wiki/KISS_principle">Keep it simple</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">Don't Repeat Yourself</a></li>
+        </ul>
+        <p>I also deeply agree with <a href="https://www.linkedin.com/in/alex-sadler-3ab689147/">Alex Sadler</a>, who said: "what matters is peer review, experience and understanding your objective".</p>
+        <p>These principles are very generic, hence timeless. Three first principles in the list above are ordered by priority. E.g. if making it DRY breaks the KISS severely, then ditch the DRY.</p>
+        <p>Once I found a code which was begging to make it DRY. I tried, added a dozen of parameters to make it happen. Found it became so complex, that I'd better revert it. Another senior engineer found I'm OK to keep it not DRY (a really unusual situation) and said like nah, I'll make it happen, I'm sure. After some time he reverted it too.</p>
+        <p>The main idea I've got from the <a href="https://en.wikipedia.org/wiki/Code_Complete">Code Complete</a> by Steve McConnell was: fight the complexity.</p>
+        <p>It's simple to create a complex code. It's complex to create a simple code. The same goes for UX.</p>
+        <p>But the value for the user actually beats even KISS: what's the profit from KISS, if the change doesn't bring a value to the user at all?</p>
+        <p>Improving the codebase should get the features to the user faster and with less bugs, as in replacing boilerplate Python code with <a href="https://hasura.io/">Hasura</a> or switching to <a href="https://prisma.typegraphql.com/">TypeGraphQL Prisma</a>.</p>
+        <p>We should build, measure (saying no to vanity metrics), and learn from this feedback data - to find what to build next and what to throw away. One great book I recommend is <a href="https://en.wikipedia.org/wiki/The_Lean_Startup">The Lean Startup</a> by Eric Ries, valuable both for <a href="https://en.wikipedia.org/wiki/Intrapreneurship">intrapreneurs</a> and entrepreneurs.</p>
+        <div class="nav">
+          <div><a href="#open-source">◀ Open source</a></div>
+          <div><a href="#offer">Offer ▶</a></div>
+        </div>
+      </div>
+
+      <div class="section" id="offer">
+        <div class="header"><div class="title">Offer:</div></div>
+        <ul>
+          <li>Backend engineer/architect.</li>
+          <li>Python, TypeScript, SQL, NoSQL, AWS, DevOps, etc - <a href="Denis-Ryzhkov-CV-2024-11.pdf">CV</a>.</li>
+          <li>B2B contract remotely from Poland to any country worldwide.</li>
+          <li>70 EUR per hour, 560 per day, 12K per month, 144K per year.</li>
+          <li>If you have matching opportunities, please <a href="#contacts">contact</a> me.</li>
+        </ul>
+        <div class="nav">
+          <div><a href="#principles">◀ Principles</a></div>
+          <div><a href="#contacts">Contacts ▶</a></div>
+        </div>
+      </div>
+
+      <div class="section" id="contacts">
+        <div class="header"><div class="title">Contacts and links:</div></div>
+        <ul>
+          <li class="email"><div class="header"><div class="title"><a href="mailto:denisr@denisr.com">denisr@denisr.com</a></div></div></li>
+          <li class="linkedin"><div class="header"><div class="title"><a href="https://www.linkedin.com/in/denisryzhkov">linkedin.com/in/denisryzhkov</a></div></div></li>
+          <li class="indeed"><div class="header"><div class="title"><a href="https://my.indeed.com/p/denisr-65pdxcz">indeed.com:denisr-65pdxcz</a></div></div></li>
+          <li class="nfj"><div class="header"><div class="title"><a href="https://nofluffjobs.com/profile/6QYXXKQW">nofluffjobs.com:6QYXXKQW</a></div></div></li>
+          <li class="remoteok"><div class="header"><div class="title"><a href="https://remoteok.com/@denisr">remoteok.com/@denisr</a></div></div></li>
+          <li class="arc"><div class="header"><div class="title"><a href="https://arc.dev/@denisr">arc.dev/@denisr</a></div></div></li>
+          <li class="github"><div class="header"><div class="title"><a href="https://github.com/denis-ryzhkov">github.com/denis-ryzhkov</a></div></div></li>
+          <li class="github"><div class="header"><div class="title"><a href="https://github.com/whyolet">github.com/whyolet</a></div></div></li>
+          <li class="whyolet"><div class="header"><div class="title"><a href="https://whyolet.com">whyolet.com</a></div></div></li>
+          <li class="pypi"><div class="header"><div class="title"><a href="https://pypi.org/user/denisr/">pypi.org/user/denisr</a></div></div></li>
+          <li class="indiehackers"><div class="header"><div class="title"><a href="https://www.indiehackers.com/denisr">indiehackers.com/denisr</a></div></div></li>
+          <li class="personalities16"><div class="header"><div class="title"><a href="https://www.16personalities.com/intj-personality">16personalities.com:INTJ-A</a></div></div></li>
+          <li class="stackoverflow"><div class="header"><div class="title"><a href="https://stackoverflow.com/users/350937/denis-ryzhkov">stackoverflow.com:denis-ryzhkov</a></div></div></li>
+        </ul>
+        <div class="nav">
+          <div><a href="#offer">◀ Offer</a></div>
+          <div>&nbsp;</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        var scrollToTop = function() {
+          scroll(0, 0);
+        };
+
+        var ensureScrollToTop = function() {
+          scrollToTop();
+          setTimeout(scrollToTop, 100);
+        }
+
+        addEventListener("hashchange", ensureScrollToTop);
+
+        if (!location.hash) {
+          location.hash = "#hi";
+          ensureScrollToTop();
+        }
+
+        ensureScrollToTop();
+      })();
+    </script>
+  </body>
+</html>
